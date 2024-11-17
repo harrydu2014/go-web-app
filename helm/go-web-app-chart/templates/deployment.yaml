@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: go-web-app
-        image: dumingyuan0829/harry-test-devops:v1
+        image: dumingyuan0829/harry-test-devops:{{ .Values.image.tag }}
         ports:
         - containerPort: 8080
